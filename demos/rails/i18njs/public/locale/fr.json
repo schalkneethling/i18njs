@@ -1,0 +1,6 @@
+{
+    "language" : "French",
+    "firstNameReq" : "S'il vous plaît entrer votre prénom",
+    "phoneNumber" : "S'il vous plaît entrer un numéro de téléphone valide",
+    "emailInvalid" : "S'il vous plaît entrer une adresse email valide"
+}
