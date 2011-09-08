@@ -40,6 +40,9 @@
                 }
             });
         },
+        userSelected: function(lang) {
+            this.setLanguage(lang);
+        },
         init: function(options) {
 
             var localMsgStore = "";

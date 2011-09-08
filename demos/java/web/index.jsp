@@ -23,6 +23,10 @@
     </head>
     <body>
         <h1>Sign Up</h1>
+	<ul id="langswitch">
+            <li><a href="#switchlang" lang="fr">French</a></li>
+            <li><a href="#switchlang" lang="de">German</a></li>
+        </ul>
         <form name="signup" id="signup" action="./" method="post">
             <fieldset>
                 <div class="elem_group">
@@ -64,6 +68,14 @@
                     ctx.next(".error").remove();
                     $(errorContainer).append(i18n.msgStore[msgKey]).insertAfter(ctx);
                 };
+
+                // Overriding language set based on user selection
+                $("#langswitch a").each(function() {
+		    $(this).click(function(event) {
+		        event.preventDefault();
+		        i18n.userSelected($(this).attr("lang"));
+		    });
+		});
 
                 $("#first_name").blur(function(event) {
 
