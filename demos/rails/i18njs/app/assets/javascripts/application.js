@@ -26,6 +26,14 @@ $().ready(function() {
 	    $(errorContainer).append(i18n.msgStore[msgKey]).insertAfter(ctx);
 	};
 
+	// Overriding language set based on user selection
+        $("#langswitch a").each(function() {
+	    $(this).click(function(event) {
+	        event.preventDefault();
+	        i18n.userSelected($(this).attr("hreflang"));
+	    });
+	});
+
 	$("#first_name").blur(function(event) {
 
 	    var nameErr = $(this).next(".error");

@@ -24,8 +24,8 @@
     <body>
         <h1>Sign Up</h1>
 	<ul id="langswitch">
-            <li><a href="#switchlang" lang="fr">French</a></li>
-            <li><a href="#switchlang" lang="de">German</a></li>
+            <li><a href="#switchlang" hreflang="fr">French</a></li>
+            <li><a href="#switchlang" hreflang="de">German</a></li>
         </ul>
         <form name="signup" id="signup" action="./" method="post">
             <fieldset>
@@ -73,7 +73,7 @@
                 $("#langswitch a").each(function() {
 		    $(this).click(function(event) {
 		        event.preventDefault();
-		        i18n.userSelected($(this).attr("lang"));
+		        i18n.userSelected($(this).attr("hreflang"));
 		    });
 		});
 
