@@ -1,0 +1,81 @@
+body {
+	background: #333 url(../images/type.png) top left repeat;
+	color: #fff;
+	font: 80%/1.5 sans-serif;
+}
+h1, h2 {
+	font-family: 'Love Ya Like A Sister', cursive; 
+	font-weight: 400;
+}
+h1 {
+	position: relative;
+	margin-bottom: 30px;
+	font-size: 3em;
+	text-align: center;
+}
+a:link, a:visited {
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	border-bottom: 1px dotted #fff;
+	text-decoration: none;
+}
+pre, 
+#signup {
+	background-color: #808080;
+	color: #fff;
+	padding: .7em;
+	border: 1px solid #fff;
+	width: 95%;
+	font-size: 12px;		
+}
+pre {
+	font-size: 13px;
+	text-shadow: 1px 1px 2px #333;
+}
+p code {
+	font-size: 12px;
+}
+fieldset {
+	border: 0;
+}
+legend {
+	color: white;
+	text-shadow: 1px 1px 2px #333;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+input[type="text"] {
+	padding: .5em;
+	border: 2px solid #333;
+	width: 250px;
+}
+input[type="submit"] {
+	background-color: #C80000;
+	color: white;
+	margin-top: 0.7em;
+	padding: .5em;
+	border: 0;
+	border-radius: 5px;		
+}
+.container {
+	margin: 0 auto;
+	width:90em;
+}
+.ps {
+	font-family: 'Love Ya Like A Sister', cursive; 
+	font-weight: 400;
+	font-size: 1.7em;
+}
+.error {
+	background-color: #c80000;
+	color: #fff;
+	padding: .5em;
+	border: 2px solid #FF2E2E;
+	border-radius: 5px;
+	font-size: 11px;
+	height: 1%;
+}
